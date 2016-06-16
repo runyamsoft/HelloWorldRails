@@ -1,0 +1,12 @@
+<h1>This is article index</h1>
+<p><%= link_to 'New', new_article_path %></p>
+
+<% @articles.each do |article| %>
+	
+	<h3><%= article.title %></h3>
+	<h5><%= article.text %></h5>
+	<%= link_to 'Edit', new_article_path %>
+	<hr>
+<% end %>
+
+ 
